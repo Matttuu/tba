@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PROTOTYPE</title>
+    <link href="Content/css/Page.css" rel="stylesheet" />
+    <link href="Content/css/ToggleModeBTN.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Desktop nav-->
+        <div class="hidden-xs hidden-sm visible-lg">
+            <div class="header">
+                <div class="spacingLeftRight">
+                    <div class="logo">
+                        <h1>PROGRAMMERING</h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Java</a>
+                            </li>
+                            <li>
+                                <a href="#">Systemudvikling</a>
+                            </li>
+                            <li>
+                                <a href="#">Om os</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--Desktop nav end-->
+
+        <!--Mobile/small devices nav-->
+        <div class="visible-xs visible-sm hidden-lg-up">
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <a class="navbar-brand" href="#">PROGRAMMERING</a>
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#">Java</a>
+                            </li>
+                            <li>
+                                <a href="#">Systemudvikling</a>
+                            </li>
+                            <li>
+                                <a href="#">Om os</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--Mobile/small devices nav end-->
+
+        <div id="content">
+            <!--Desktop side nav -->
+            <div class="hidden-xs hidden-sm visible-lg">
+                <div class="sidenav">
+
+                    <button type="button" class="btn btn-primary btn-mode" id="modes">Modes</button>
+                    <div id="showmodes" class="btn-mode" hidden>
+                        <button type="button" class="btn btn-lg btn-toggle normal active" data-toggle="button" aria-pressed="true" autocomplete="off">
+                            <div class="handle"></div>
+                        </button>
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-lg btn-toggle street" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <div class="handle"></div>
+                        </button>
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-lg btn-toggle nerd" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <div class="handle"></div>
+                        </button>
+                    </div>
+
+
+                    <a href="#">Emne1</a>
+                    <a href="#">Emne2</a>
+                    <a href="#">Emne3</a>
+                    <a href="#">Emne4</a>
+                </div>
+            </div>
+            <!--Desktop side nav end-->
+
+            <!--Main content-->
+            <div class="container menu-margin">
+                <div class="row">
+                    <div class="main" id="toggle-mobile">
+                        <h2>Basics</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat nulla id risus viverra tincidunt. Nullam nec tellus
+                            at turpis egestas consectetur vitae eu nulla. Morbi vestibulum eleifend nisi ac consectetur.
+                            Sed id sollicitudin risus, eu bibendum magna. Proin blandit lorem id velit cursus, sit amet efficitur
+                            ante iaculis. Curabitur congue facilisis neque, eget tempor turpis tempus placerat. Proin consectetur
+                            eleifend mauris, id placerat nulla rhoncus eget. Nullam laoreet vestibulum accumsan. Donec fermentum
+                            nisi eu nisi malesuada, eget consectetur justo pellentesque. Donec venenatis, ex ac tristique
+                            ullamcorper, neque velit rhoncus tortor, nec pulvinar nulla nulla quis libero. Phasellus mollis
+                            mi dolor, quis facilisis orci dignissim ut. In elementum, sem et molestie bibendum, dolor ante
+                            sollicitudin nisi, vel egestas mi justo ac risus. Quisque et consequat dolor. Curabitur ornare
+                            pretium elit, ut gravida ligula rhoncus ut.
+                        </p>
+                        <p> Nunc luctus accumsan arcu. Donec nisl arcu, rhoncus in condimentum sit amet, lobortis vehicula tellus.
+                            Aenean eget est iaculis, porta diam accumsan, maximus ligula. Vivamus mauris orci, tincidunt
+                            non dolor et, finibus tempor mi. Morbi ut odio sagittis, cursus arcu sit amet, pretium mi. Nulla
+                            et luctus turpis, eu tristique elit. Ut sollicitudin, orci sit amet condimentum ornare, libero
+                            quam ornare nisl, sed commodo est neque dapibus nulla. Vivamus non neque nec purus fermentum
+                            suscipit a eu sapien. Mauris condimentum diam purus, sit amet faucibus est consequat nec.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Main content end-->
+
+        <!--Mobile/small devices extra menu bottom-->
+        <div class="dropdown dropup pull-right mobil-sidemenu" id="mobile-extra-menu-toogle">
+            <button type="button" class=" btn btn-primary btn-circle btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class=" glyphicon glyphicon-wrench"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" href="#">Emne1</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Emne2</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Emne3</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Emne4</a>
+                </li>
+
+                <hr>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <button type="button" class="btn btn-lg btn-toggle normal active" data-toggle="button" aria-pressed="true" autocomplete="off">
+                            <div class="handle"></div>
+                        </button>
+
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <button type="button" class="btn btn-lg btn-toggle street" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <div class="handle"></div>
+                        </button>
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <button type="button" class="btn btn-lg btn-toggle nerd" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <div class="handle"></div>
+                        </button>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!--Mobile/small devices extra menu bottom end-->
+
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="Content/js/page.js"></script>
+
+</html>
